@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:inventory_manager/Screens/home.dart';
+import 'package:inventory_manager/pages/home.dart';
 
 void main() {
   runApp(const MyApp());

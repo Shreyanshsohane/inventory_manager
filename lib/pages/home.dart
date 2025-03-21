@@ -1,6 +1,7 @@
 import 'dart:convert';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:inventory_manager/pages/addProduct.dart';
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -77,6 +78,17 @@ class _HomeScreenState extends State<HomeScreen> {
                   );
                 },
               ),
+      floatingActionButton: FloatingActionButton(
+        onPressed:
+            () => {
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) => const AddStockScreen()),
+              ),
+            },
+        child: const Icon(Icons.add),
+        tooltip: 'Add Stock',
+      ),
     );
   }
 }
